@@ -7,6 +7,7 @@ load_dotenv()
 
 app = FastAPI()
 
+
 def get_riot_data(name: str, tag: str):
     api_key = os.getenv('API_KEY')
     link = f'https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{name}/{tag}?api_key={api_key}'
